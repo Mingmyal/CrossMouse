@@ -1,0 +1,29 @@
+<Project>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <OutputPath>..\dist\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AssemblyName>CrossMouse</AssemblyName>
+    <RootNamespace>CrossMouse</RootNamespace>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="src\*.cs" />
+    <EmbeddedResource Include="assets\CrossMouse.ico">
+      <Link>CrossMouse.ico</Link>
+      <LogicalName>CrossMouse.ico</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
