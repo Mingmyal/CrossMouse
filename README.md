@@ -4,7 +4,7 @@
 
 多显示器用户常遇到一个问题：光标太容易滑出主屏，跑到旁边的副屏上去。CrossMouse 让鼠标指针默认被锁在当前显示器内，只有按住你指定的按键时才临时解锁，允许跨屏。
 
-<p align="center"><img src="docs/screenshot.png" width="620" alt="CrossMouse 设置界面"></p>
+<p align="center"><img src="docs/screenshot.png" width="660" alt="CrossMouse 设置界面"></p>
 
 ## 功能
 
